@@ -1,6 +1,6 @@
 {
   "name": "sprite-sass",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -22,11 +22,11 @@
     "type": "git",
     "url": "https://github.com/suniaoo/sprite-sass.git"
   },
-  "keywords": {
+  "keywords": [
     "sprite",
     "sprites",
     "sass"
-  },
+  ],
   "bugs": {
     "url": "https://github.com/suniaoo/sprite-sass/issues" 
   },

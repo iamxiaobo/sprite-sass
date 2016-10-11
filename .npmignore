@@ -3,5 +3,3 @@ node_modules
 *.swp
 tmp
 test/public
-lib
-npm-debug.log
