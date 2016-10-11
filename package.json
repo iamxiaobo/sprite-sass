@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "babel src -d lib"
+    "compile": "babel src -d lib",
+    "prepublish": "npm run compile"
   },
-  "author": "",
+  "author": "sunxiaobo",
   "license": "ISC",
   "dependencies": {
     "glob": "^7.1.0",
@@ -16,6 +17,18 @@
     "lodash": "^4.16.4",
     "mkdirp": "^0.5.1",
     "write": "^0.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suniaoo/sprite-sass.git"
+  },
+  "keywords": {
+    "sprite",
+    "sprites",
+    "sass"
+  },
+  "bugs": {
+    "url": "https://github.com/suniaoo/sprite-sass/issues" 
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
