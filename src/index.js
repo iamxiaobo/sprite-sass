@@ -98,15 +98,15 @@ module.exports = function(opt, callback) {
     var templateData = {
       retina: true,
       spriteImage: {
-        path: `${_.repeat('../', dirFileName.split('/').length)}img/${path.join(dirFileName, fileName + '.png')}`, 
+        path: `${_.repeat('../', dirFileName.split('/').length)}img/${path.join(dirFileName, 'sprite-' + fileName + '.png')}`, 
         width,
         height
       },
       list: sprites
     }
 
-    spriteImage.save(path.join(imgDirPath, dirFileName, `${fileName}.png`))
-    writeFile.sync(path.join(scssDirPath, dirFileName, `${fileName}.scss`), template({data: templateData, type: 'sass'}))
+    spriteImage.save(path.join(imgDirPath, dirFileName, `sprite-${fileName}.png`))
+    writeFile.sync(path.join(scssDirPath, dirFileName, `sprite-${fileName}.scss`), template({data: templateData, type: 'sass'}))
   })
 
   // 分组
