@@ -1,8 +1,11 @@
 #SPRITE-SASS
 
 > A modular image sprite generator.
+      
 > Mainly used for mobile develop.
+
 > Generates sprites and proper sass files
+
 > Change sprite position freely
 
 ##Install
@@ -64,3 +67,33 @@ example
           | - sprite-index.scss
           | - sprite-list.png
 ```
+
+Also you can use `npm run example` to see.
+##Sass file
+Use previous step result, such as `sprite-index.scss`:
+
+```sass
+@mixin sprite($sprite, $positionX: 0, $positionY: 0) {
+  background-image: $spriteImage;
+  @include sprite-position($sprite, $positionX, $positionY);  
+  background-repeat: no-repeat;
+  background-size: 234px 9px;
+}
+```
+
+Note that `sprite` need three parameters:
+* **$sprite**: The variable of sprite element 
+* **$positionX**: If you want adjust the position of sprite element, pass number with pixel param just like change background-position-x based $sprite.
+* **$positionY**: If you want adjust the position of sprite element, pass pixel number just like change background-position-y based $sprite.
+
+For example:
+
+```sass
+@import "./public/scss/icons/sprite-index";
+
+.icon {
+  @include sprite($arrow-down, -1px, -1px);  
+}
+```
+
+Now, The position of background image of `.icon` is left 1px and top 1px compare base status.
