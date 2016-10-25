@@ -1,7 +1,9 @@
 #SPRITE-SASS
 
+Use sass with image sprite, and allow you to define the position of every sprite element.
+
 > A modular image sprite generator.
-      
+  
 > Mainly used for mobile develop.
 
 > Generates sprites and proper sass files
